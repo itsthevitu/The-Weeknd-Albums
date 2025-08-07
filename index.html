@@ -13,7 +13,7 @@
         height: 100dvh;
         font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
           "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-        background-color: #ffe6e6;
+        background-color: #e6f4ff;
       }
 
       header {
@@ -50,7 +50,7 @@
 
       .album-card:hover {
         transform: scale(1.05);
-        background: rgba(255, 50, 50, 0.2);
+        background: rgba(50, 122, 255, 0.2);
       }
 
       .album-cover {
@@ -60,27 +60,27 @@
       }
 
       .modal-body {
-        background-color: #ffe6e6;
+        background-color: #e6f1ff;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         border: 1px solid rgba(255, 255, 255, 0.3);
       }
 
       .list-group-item {
         cursor: pointer;
-        background-color: #ffe6e6;
+        background-color: #e6f1ff;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         border: 1px solid rgba(255, 255, 255, 0.3);
       }
 
       .list-group-item:hover {
-        background: rgba(255, 50, 50, 0.2);
+        background: rgba(50, 122, 255, 0.2);
       }
     </style>
   </head>
   <body>
     <header>
       <img
-        src="https://seeklogo.com/images/T/the-weeknd-logo-63E7F80172-seeklogo.com.png"
+        src="https://www.pngall.com/wp-content/uploads/5/The-Weeknd-Logo-PNG-Image.png"
         alt="The Weeknd Logo"
       />
     </header>
@@ -476,7 +476,7 @@
             },
           ],
         },
-        // Adicione mais álbuns aqui
+       
       ];
 
       const albumContainer = document.getElementById("albums");
@@ -490,7 +490,7 @@
        <img src="${album.cover}" class="card-img-top album-cover" alt="${album.title}">
        <div class="card-body">
          <h5 class="card-title">${album.title}</h5>
-         <button class="btn btn-danger" onclick="showSongs('${album.title}')">Ver Músicas</button>
+         <button class="btn btn-primary" onclick="showSongs('${album.title}')">Ver Músicas</button>
        </div>
      </div>
    `;
